@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="close-sidebar">
+                <span class="close-icon">&times;</span>
+            </button>
+            <h2>AI Tool Finder</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="mobile-menu">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="logo">AI Tool Finder</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover AI Solutions</h1>
+                <p>Find the perfect AI tools tailored to your business needs</p>
+                <div class="search-container">
+                    <div class="filter-container">
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="language">Language & Text</option>
+                            <option value="visual">Visual & Image</option>
+                            <option value="editing">Editing & Enhancement</option>
+                            <option value="analytics">Analytics & Insights</option>
+                        </select>
+                    </div>
+                    <div class="search-container-inner">
+                        <input type="text" id="searchInput" placeholder="Search for AI tools...">
+                        <button id="searchButton">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <h2>Popular AI Tools</h2>
+            <div id="toolsGrid" class="tools-grid">
+                <!-- Tools will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>We help you find the best AI tools for your specific needs. Our platform provides detailed information about various AI tools and their capabilities.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Tool Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

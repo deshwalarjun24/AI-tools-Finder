@@ -1,0 +1,165 @@
+{
+    "categories": {
+        "language": {
+            "name": "Language & Text",
+            "description": "AI tools for natural language processing, text generation, and language understanding"
+        },
+        "visual": {
+            "name": "Visual & Image",
+            "description": "AI tools for image generation, editing, and visual content creation"
+        },
+        "editing": {
+            "name": "Editing & Enhancement",
+            "description": "AI tools for content editing, enhancement, and optimization"
+        },
+        "analytics": {
+            "name": "Analytics & Insights",
+            "description": "AI tools for data analysis and business insights"
+        },
+        "coding": {
+            "name": "Coding & Development",
+            "description": "AI tools for code generation, debugging, and development assistance"
+        },
+        "music": {
+            "name": "Music & Audio",
+            "description": "AI tools for music creation, audio processing, and sound generation"
+        }
+    },
+    "tools": [
+        {
+            "id": "chatgpt",
+            "name": "ChatGPT",
+            "description": "Powerful AI chatbot for natural conversations and content generation",
+            "category": "language",
+            "website": "https://chat.openai.com",
+            "features": [
+                "Natural language processing",
+                "Code generation",
+                "Content creation",
+                "Research assistance"
+            ],
+            "price": "Free with limitations",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "dalle",
+            "name": "DALL-E",
+            "description": "AI image generation tool that creates images from text descriptions",
+            "category": "visual",
+            "website": "https://labs.openai.com",
+            "features": [
+                "Image generation",
+                "Art creation",
+                "Photo editing",
+                "Style transfer"
+            ],
+            "price": "Subscription-based",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "midjourney",
+            "name": "Midjourney",
+            "description": "Creative AI art generator that creates stunning visuals from text",
+            "category": "visual",
+            "website": "https://www.midjourney.com",
+            "features": [
+                "Art generation",
+                "Image enhancement",
+                "Style transfer",
+                "Photo manipulation"
+            ],
+            "price": "Subscription-based",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "stable-diffusion",
+            "name": "Stable Diffusion",
+            "description": "Open-source AI image generation model",
+            "category": "visual",
+            "website": "https://stability.ai/stable-diffusion",
+            "features": [
+                "Image synthesis",
+                "Text-to-image",
+                "AI art",
+                "Custom training"
+            ],
+            "price": "Open-source",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "adobe-firefly",
+            "name": "Adobe Firefly",
+            "description": "AI-powered image editing and generation by Adobe",
+            "category": "editing",
+            "website": "https://www.adobe.com/ai",
+            "features": [
+                "Image editing",
+                "Style transfer",
+                "Photo enhancement",
+                "Creative tools"
+            ],
+            "price": "Adobe Creative Cloud subscription",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "claude",
+            "name": "Claude",
+            "description": "AI assistant with advanced reasoning and code capabilities",
+            "category": "language",
+            "website": "https://www.anthropic.com",
+            "features": [
+                "Content creation",
+                "Code assistance",
+                "Research",
+                "Advanced reasoning"
+            ],
+            "price": "Subscription-based",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "deepseek",
+            "name": "DeepSeek",
+            "description": "AI-powered search and analytics platform",
+            "category": "analytics",
+            "website": "https://deepseek.com",
+            "features": [
+                "Data analysis",
+                "Insights generation",
+                "Pattern recognition",
+                "Business intelligence"
+            ],
+            "price": "Enterprise pricing",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "github-copilot",
+            "name": "GitHub Copilot",
+            "description": "AI pair programmer that helps write code",
+            "category": "coding",
+            "website": "https://github.com/copilot",
+            "features": [
+                "Code completion",
+                "Documentation",
+                "Debugging assistance",
+                "Code generation"
+            ],
+            "price": "Subscription-based",
+            "last_updated": "2025-06-05"
+        },
+        {
+            "id": "music-generator",
+            "name": "MusicLM",
+            "description": "AI music generation tool that creates music from text descriptions",
+            "category": "music",
+            "website": "https://musiclm-demo.glitch.me/",
+            "features": [
+                "Music creation",
+                "Audio processing",
+                "Sound generation",
+                "Custom styles"
+            ],
+            "price": "Free",
+            "last_updated": "2025-06-05"
+        }
+    ]
+}
