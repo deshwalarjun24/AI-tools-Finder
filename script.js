@@ -199,6 +199,86 @@ searchInput.addEventListener('input', (e) => {
 });
 
 // Initialize form submission
+const contactForm = document.getElementById('contactForm');
+const formStatus = contactForm.querySelector('.form-status');
+const spinner = formStatus.querySelector('.spinner');
+const statusMessage = formStatus.querySelector('.status-message');
+const submitBtn = contactForm.querySelector('.submit-btn');
+
+// Form validation
+function validateForm() {
+    let isValid = true;
+    const formGroups = contactForm.querySelectorAll('.form-group');
+    
+    formGroups.forEach(group => {
+        const input = group.querySelector('input, textarea');
+        const errorSpan = group.querySelector('.error-message');
+        
+        if (input.required && !input.value.trim()) {
+            errorSpan.textContent = `${input.getAttribute('placeholder') || input.name} is required`;
+            group.classList.add('error');
+            isValid = false;
+        } else {
+            group.classList.remove('error');
+            errorSpan.textContent = '';
+        }
+    });
+    
+    return isValid;
+}
+
+// Form submission
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    if (!validateForm()) return;
+    
+    try {
+        submitBtn.disabled = true;
+        spinner.style.display = 'block';
+        statusMessage.textContent = '';
+        
+        // Simulate form submission
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        
+        // In a real application, you would send this data to your server
+        // Here we'll just simulate a successful submission
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        statusMessage.textContent = 'Message sent successfully!';
+        statusMessage.style.color = '#27ae60';
+        
+        // Clear the form
+        contactForm.reset();
+        
+    } catch (error) {
+        statusMessage.textContent = 'An error occurred. Please try again.';
+        statusMessage.style.color = '#e74c3c';
+    } finally {
+        submitBtn.disabled = false;
+        spinner.style.display = 'none';
+    }
+});
+
+// Clear error messages when input changes
+contactForm.querySelectorAll('input, textarea').forEach(input => {
+    input.addEventListener('input', () => {
+        const group = input.closest('.form-group');
+        group.classList.remove('error');
+        group.querySelector('.error-message').textContent = '';
+    });
+});
+
+// Add smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 document.getElementById('contactForm').addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Thank you for your message! We will get back to you soon.');
